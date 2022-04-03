@@ -65,12 +65,12 @@ const pokemonType = (types) => {
 
 const pokemonHeight = (name) => {
     const pokeHeight = document.getElementById("pokeHeight")
-    pokeHeight.innerHTML = name / 100 + ' m'
+    pokeHeight.innerHTML = name / 10 + ' m'
 }
 
 const pokemonWeight = (name) => {
     const pokeWeight = document.getElementById("pokeWeight")
-    pokeWeight.innerHTML = name / 100 + ' Kg'
+    pokeWeight.innerHTML = name / 10 + ' Kg'
 }
 const pokemonStats = (stats) => {
     const pokeStats = document.getElementById("pokeStats")
