@@ -1214,5 +1214,9 @@ nav {
   .pd-body .pd-body-right .info-container {
     padding: 15px;
   }
+  .pd-body .pd-body-left .info-container .screen-frame,
+  .pd-body .pd-body-right .info-container .screen-frame {
+    padding: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
