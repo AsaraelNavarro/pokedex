@@ -1,0 +1,452 @@
+@import "_reset.scss";
+@import "_form.scss";
+@import "_variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap");
+
+/*Global styles*/
+
+/*Background colors*/
+.bg-white {
+	background: $c-white;
+}
+.bg-red {
+	background: $c-red;
+}
+.bg-red-dark {
+	background: $c-red-dark;
+}
+.bg-blue {
+	background: $c-blue;
+}
+.bg-yellow {
+	background: $c-yellow;
+}
+.bg-green {
+	background: $c-green;
+}
+
+/*Type colors*/
+.grass {
+	background: $c-grass;
+}
+.poison {
+	background: $c-poison;
+	color: $c-white;
+}
+.fire {
+	background: $c-fire;
+	color: $c-white;
+}
+.flying {
+	background: $c-flying;
+}
+.ice {
+	background: $c-ice;
+}
+.wather {
+	background: $c-wather;
+	color: $c-white;
+}
+.bug {
+	background: $c-bug;
+	color: $c-white;
+}
+.psychic {
+	background: $c-psychic;
+	color: $c-white;
+}
+.normal {
+	background: $c-normal;
+	color: $c-white;
+}
+.electric {
+	background: $c-electric;
+}
+.ground {
+	background: $c-ground;
+}
+.fairy {
+	background: $c-fairy;
+}
+.fighting {
+	background: $c-fighting;
+	color: $c-white;
+}
+.rock {
+	background: $c-rock;
+	color: $c-white;
+}
+.ghost {
+	background: $c-ghost;
+	color: $c-white;
+}
+.dragon {
+	background: $c-dragon;
+	color: $c-white;
+}
+.dark {
+	background: $c-dark;
+	color: $c-white;
+}
+.steel {
+	background: $c-steel;
+	color: $c-white;
+}
+
+body {
+	font-family: "Source Code Pro", monospace;
+	color: #383838;
+}
+main {
+	padding: 150px 0;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+h3 {
+	font-size: 1.75rem;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+h4 {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.space {
+	padding: 80px 0;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-column {
+	flex-direction: column;
+}
+.justify-start {
+	justify-content: flex-start;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-end {
+	justify-content: flex-end;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.align-center {
+	align-items: center;
+}
+
+.col-6 {
+	flex: 1 1 50%;
+}
+.btn-circle {
+	border-radius: 50%;
+	border: 5px solid #ffffff;
+	display: block;
+}
+.btn-go {
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+	border-radius: 50%;
+	background: $c-green;
+	border: 4px solid $c-bug;
+	display: block;
+	font-weight: bold;
+	text-align: center;
+}
+.btn-go:hover {
+	background-color: $c-bug;
+	color: $c-white;
+}
+
+.big {
+	width: 80px;
+	height: 80px;
+	border-width: 5px;
+}
+.medium {
+	width: 60px;
+	height: 60px;
+	border-width: 4px;
+}
+.small {
+	width: 20px;
+	height: 20px;
+	border-width: 3px;
+}
+
+/* Navigation*/
+
+nav {
+	height: 100px;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	z-index: 10;
+	background-color: #ffffff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+	text-align: left;
+	width: 20vw;
+	img {
+		width: 16rem;
+		height: 100%;
+		padding: 5px;
+		object-fit: contain;
+	}
+}
+
+/* Camera section*/
+.camera-holder {
+	.camera-section.left {
+		padding: 30px;
+		vertical-align: top;
+		border-radius: 15px 15px 0 0;
+		box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+
+		.btn-circle {
+			margin-right: 15px;
+		}
+	}
+}
+
+/*Pokedex section*/
+.inner-header {
+	border-bottom: 1px solid $c-gray-medium;
+}
+.inner-body {
+	padding: 20px 0;
+}
+.inner-footer {
+	padding-top: 15px;
+	border-top: 1px solid $c-gray-medium;
+}
+.pd-body {
+	border-radius: 0 0 15px 15px;
+	.pd-body-left {
+		border-right: 4px solid $c-red-dark;
+	}
+	.pd-body-left,
+	.pd-body-right {
+		padding: 40px;
+	}
+	.info-container {
+		padding: 30px;
+		background-color: $c-red-dark;
+		border-radius: 15px;
+		height: 100%;
+
+		.screen-frame {
+			background-color: $c-gray-light;
+			border: 5px solid $c-gray-medium;
+			padding: 40px;
+			border-radius: 15px;
+
+			.screen {
+				background-color: $c-white;
+				padding: 20px;
+				border-radius: 15px;
+				box-shadow: inset -2px 2px 4px rgba(0, 0, 0, 0.15);
+
+				h2 {
+					text-transform: capitalize;
+				}
+
+				p {
+					font-weight: bold;
+				}
+				.type-item {
+					padding: 2px 6px;
+					border-radius: 2px;
+					font-weight: bold;
+					margin: 0 5px 5px 0;
+					text-transform: capitalize;
+				}
+				img {
+					width: 70%;
+				}
+			}
+		}
+		.controls {
+			padding: 20px 0;
+			.cross-pad {
+				flex: 1 1 100px;
+				max-width: 100px;
+			}
+			.info-input {
+				flex: 1;
+				padding: 30px 0 30px 30px;
+				input {
+					margin-right: 15px;
+				}
+			}
+		}
+		.stats-container {
+			padding: 20px;
+			background-color: $c-black;
+			border-radius: 15px;
+			color: $c-white;
+			margin-bottom: 30px;
+			min-height: 350px;
+
+			.stat {
+				padding-bottom: 15px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				.stat-name {
+					margin-right: 10px;
+					flex: 0 1 40%;
+				}
+
+				.stat-progress {
+					flex: 1 1 60%;
+					padding-right: 40px;
+
+					.progress {
+						width: 100%;
+						height: 18px;
+						max-width: 100%;
+						position: relative;
+
+						/* -webkit-appearance: none;
+						appearance: none; */
+
+						&::-webkit-progress-bar {
+							background: $c-white;
+							border: 1px solid transparent;
+							border-radius: 15px;
+							overflow: hidden;
+						}
+
+						&::-webkit-progress-value,
+						&::-moz-progress-bar,
+						&[value]::-webkit-progress-value {
+							background-image: linear-gradient(to left, $c-red-2, darken($c-red-2, 15));
+						}
+
+						&[value^="3"]:not([value="3"])::-webkit-progress-value,
+						&[value^="4"]:not([value="4"])::-webkit-progress-value,
+						&[value^="5"]:not([value="5"])::-webkit-progress-value,
+						&[value^="3"]:not([value="3"])::-moz-progress-bar,
+						&[value^="4"]:not([value="4"])::-moz-progress-bar,
+						&[value^="5"]:not([value="5"])::-moz-progress-bar {
+							background-image: linear-gradient(to left, $c-yellow, darken($c-yellow, 15));
+						}
+
+						&[value^="6"]:not([value="6"])::-webkit-progress-value,
+						&[value^="7"]:not([value="7"])::-webkit-progress-value,
+						&[value^="8"]:not([value="8"])::-webkit-progress-value,
+						&[value^="9"]:not([value="9"])::-webkit-progress-value,
+						&[value="100"]::-webkit-progress-value,
+						&[value^="6"]:not([value="6"])::-moz-progress-bar,
+						&[value^="7"]:not([value="7"])::-moz-progress-bar,
+						&[value^="8"]:not([value="8"])::-moz-progress-bar,
+						&[value^="9"]:not([value="9"])::-moz-progress-bar,
+						&[value="100"]::-moz-progress-bar {
+							background-image: linear-gradient(to left, $c-green, darken($c-green, 15));
+						}
+
+						&:after {
+							content: attr(value);
+							margin-left: 102%;
+							font-weight: bold;
+							width: 2em;
+							color: $c-yellow;
+							position: absolute;
+							right: -50px;
+							top: 0;
+						}
+
+						.data-value {
+							position: absolute;
+							top: 0;
+							right: 0;
+						}
+					}
+				}
+			}
+		}
+		.moves-container {
+			padding: 20px;
+			background-color: $c-white;
+			border-radius: 15px;
+			box-shadow: inset -2px 2px 4px rgba(0, 0, 0, 0.15);
+			overflow-y: auto;
+			height: 300px;
+
+			.moves-list {
+				list-style: num;
+				margin-left: 30px;
+				li {
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+}
+/*Responsive Adding Media Queries*/
+
+@media screen and (max-width: 992px) {
+	.logo {
+		text-align: left;
+		width: 45vw;
+		z-index: 4;
+	}
+	nav {
+		position: fixed;
+		z-index: 3;
+	}
+	.col-6 {
+		flex: 1 1 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		padding: 100px 10px;
+	}
+	.camera-holder {
+		.camera-section.left {
+			padding: 15px;
+		}
+	}
+	.pd-body {
+		.pd-body-left,
+		.pd-body-right {
+			padding: 15px;
+
+			.info-container {
+				padding: 15px;
+			}
+		}
+	}
+}

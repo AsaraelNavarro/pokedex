@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Pokedex LaunchX</title>
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+		integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="index.html"><img src="img/pokedex.png" alt="Logo Image" /></a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="container flex flex-wrap camera-holder">
+			<div class="col-6 camera-section left flex bg-red">
+				<div class="inline-block btn-circle big bg-blue"></div>
+				<div class="inline-block btn-circle small bg-red"></div>
+				<div class="inline-block btn-circle small bg-yellow"></div>
+				<div class="inline-block btn-circle small bg-yellow"></div>
+			</div>
+			<div class="col-6 camera-section flex bg-white"></div>
+		</section>
+		<section class="container flex flex-wrap pd-body bg-red">
+			<div class="col-6 pd-body-left">
+				<div class="info-container flex flex-column">
+					<div class="screen-frame">
+						<div class="screen">
+							<div class="inner-header">
+								<h2 id="pokeName">¿?</h2>
+							</div>
+							<div class="inner-body">
+								<p id="pokeType">Type: </p>
+								<figure class="flex justify-center align-center">
+									<img id="pokeImg"
+										src="https://upload.wikimedia.org/wikipedia/commons/5/51/Pokebola-pokeball-png-0.png"
+										alt="">
+								</figure>
+							</div>
+							<div class="inner-footer flex justify-between">
+								<p>Height: <span id="pokeHeight"></span></p>
+								<p>Weight: <span id="pokeWeight"></span></p>
+							</div>
+						</div>
+					</div>
+					<div class="controls flex flex-wrap justify-between align-center">
+						<img id="pokeImg" class="cross-pad" src=" img/cross-pad.svg" alt="">
+						<div class="info-input flex justify-between align-center">
+							<input type="text" name="pokeInput" id="pokeInput" value=""
+								placeholder="Search for a Pokemon">
+							<button onClick="fetchPokemon()" id="" class="btn-go">GO!</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 pd-body-right ">
+				<div class="info-container flex flex-column ">
+					<div class="stats-container">
+						<div class="inner-header">
+							<h4>Stats:</h4>
+						</div>
+						<div id="pokeStats" class="inner-body">
+						</div>
+					</div>
+					<div class="moves-container">
+						<div class="inner-header">
+							<h4>Moves:</h4>
+						</div>
+						<div class="inner-body">
+							<ol id="pokeMoves" class="moves-list">
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<script src="js/main.js"></script>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+// Variables
+// ---------------------
+
+/*Global colors*/
+$c-white: #ffffff;
+$c-gray-light: #eaeaea;
+$c-gray-medium: #c4c4c4;
+$c-black: #000000;
+$c-red: #ce1131;
+$c-red-dark: #bd0f34;
+$c-red-2: #f74c4a;
+$c-blue: #009dd4;
+$c-lime: #e2e615;
+$c-yellow: #ffd44b;
+$c-green: #9bcc50;
+$c-green-dark: darken($c-green, 10%);
+
+/*Type colors*/
+$c-grass: #9bcc50;
+$c-poison: #b97fc9;
+$c-fire: #fd7d24;
+$c-flying: linear-gradient(180deg, rgba(61, 199, 239, 1) 50%, rgba(189, 185, 184, 1) 50%);
+$c-ice: #51c4e7;
+$c-wather: #4592c4;
+$c-bug: #729f3f;
+$c-psychic: #f366b9;
+$c-normal: #a4acaf;
+$c-electric: #eed535;
+$c-ground: linear-gradient(rgba(247, 222, 63, 1) 50%, rgba(171, 152, 66, 1) 50%);
+$c-fairy: #fdb9e9;
+$c-fighting: #d56723;
+$c-rock: #a38c21;
+$c-ghost: #7b62a3;
+$c-dragon: linear-gradient(180deg, rgba(83, 164, 207, 1) 50%, rgba(241, 110, 87, 1) 50%);
+$c-dark: #707070;
+$c-steel: #9eb7b8;
